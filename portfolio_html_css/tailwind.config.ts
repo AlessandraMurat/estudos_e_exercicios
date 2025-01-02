@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        krona: ["Krona One", "sans-serif"], 
+        montserrat: ["Montserrat", "sans-serif"], 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#22D4FD",
+        white: '#F6F6F6'
       },
     },
   },
