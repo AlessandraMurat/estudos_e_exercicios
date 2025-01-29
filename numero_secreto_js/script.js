@@ -5,8 +5,33 @@ alert("Boas vindas ao jogo do número secreto!");
 
 let numeroSecreto = Math.floor(Math.random() * 101);
 
-let numeroSorteado = prompt("Escolha um número entre 0 e 100");
+let numeroDigitado;
+let tentativas = 1;
 
-if (numeroSecreto === numeroSorteado) {
-  console.log(`Parabéns, o número sorteado foi ${numeroSorteado}`);
+// if (numeroSecreto === numeroDigitado) {
+//   console.log(`Parabéns, o número secreto foi ${numeroDigitado}`);
+// } else {
+//   if (numeroSecreto > numeroDigitado) {
+//     alert(`O número secreto é maior que ${numeroDigitado}`);
+//   } else {
+
+//     alert(`O número secreto é menor que ${numeroDigitado}`);
+//   }
+// }
+
+while (numeroSecreto != numeroDigitado) {
+  numeroDigitado = prompt("Escolha um número entre 0 e 100");
+
+  if (numeroSecreto == numeroDigitado) {
+    alert(
+      `Parabéns, o número secreto foi ${numeroDigitado} e você acertou em ${tentativas} tentativas.`
+    );
+  } else {
+    if (numeroSecreto > numeroDigitado) {
+      alert(`O número secreto é maior que ${numeroDigitado}`);
+    } else {
+      alert(`O número secreto é menor que ${numeroDigitado}`);
+    }
+    tentativas++;
+  }
 }

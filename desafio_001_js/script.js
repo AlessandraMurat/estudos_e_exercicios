@@ -42,4 +42,4 @@ if (idade >= 18) {
   alert(`${nome}, pode tirar a habilitação`);
 } else {
   alert(`${nome} Não pode tirar a habilitação`);
-}
+} 
