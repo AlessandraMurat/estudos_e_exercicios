@@ -20,7 +20,7 @@ let tentativas = 1;
 // }
 
 while (numeroSecreto != numeroDigitado) {
-  numeroDigitado = prompt("Escolha um número entre 0 e 100");
+  numeroDigitado = Number(prompt("Escolha um número entre 0 e 100"));
 
   if (numeroSecreto == numeroDigitado) {
     alert(
