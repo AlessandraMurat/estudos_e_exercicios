@@ -4,7 +4,10 @@ alert("Boas vindas ao jogo do número secreto!");
 //Math.floor() arredonda o número para baixo
 
 // let numeroSecreto = Math.floor(Math.random() * 101);
-let numeroSecreto = parseInt(Math.random() * 100 + 1);
+
+
+let numMax = 7000;
+let numeroSecreto = parseInt(Math.random() * numMax + 1);
 
 let numeroDigitado;
 let tentativas = 1;
@@ -21,7 +24,7 @@ let tentativas = 1;
 // }
 
 while (numeroSecreto != numeroDigitado) {
-  numeroDigitado = Number(prompt("Escolha um número entre 0 e 100"));
+numeroDigitado = Number(prompt(`Escolha um número entre 0 e ${numMax}`));
 
   if (numeroSecreto == numeroDigitado) {
     break;
