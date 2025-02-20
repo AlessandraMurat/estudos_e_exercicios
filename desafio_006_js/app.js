@@ -31,11 +31,13 @@ console.log(media(10, 10, 10));
 
 //5 - Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
 function maiorNumero(num1, num2) {
-  if (num1 > num2) {
-    return num1;
-  } else {
-    return num2;
-  }
+  // if (num1 > num2) {
+  //   return num1;
+  // } else {
+  //   return num2;
+  // }
+
+  return num1 > num2 ? num1 : num2;
 }
 console.log(maiorNumero(3, 5));
 
