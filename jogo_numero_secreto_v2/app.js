@@ -3,6 +3,7 @@
 
 // title.innerHTML = "Jogo so número secreto";
 // paragraph.innerHTML = "Escolha um número entre 1 e 10.";
+let listaDeNumerosSorteados = [];
 let numMax = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
@@ -19,7 +20,17 @@ function exibirMensagemInicial() {
 exibirMensagemInicial();
 
 function gerarNumeroAleatorio() {
-  return parseInt(Math.random() * numMax + 1);
+  let numeroSorteado = parseInt(Math.random() * numMax + 1);
+  let quantidadeItems = numMax;
+  if (quantidadeItems === listaDeNumerosSorteados.length) {
+    listaDeNumerosSorteados = [];
+  }
+  if (listaDeNumerosSorteados.includes(numeroSorteado)) {
+    return gerarNumeroAleatorio();
+  } else {
+    listaDeNumerosSorteados.push(numeroSorteado);
+    return numeroSorteado;
+  }
 }
 
 function ativarBotao() {
