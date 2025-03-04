@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>JS Game</title>
+    <title>Desafio 007 - JS</title>
   </head>
 
   <body>
@@ -18,32 +18,15 @@
       <div class="container__conteudo">
         <div class="container__informacoes">
           <div class="container__texto">
-            <h1></h1>
-            <p class="texto__paragrafo"></p>
+            <h2>Verifique se uma palavra ou frase é palíndromo</h2>
           </div>
-          <input type="number" min="1" max="10" class="container__input" />
-          <div class="chute container__botoes">
-            <button onclick="verificarChute()" class="container__botao">
-              Chutar
-            </button>
-            <button
-              onclick="reiniciarJogo()"
-              id="reiniciar"
-              class="container__botao"
-              disabled
-            >
-              Novo jogo
-            </button>
-          </div>
+          <button id="button" class="container__botao" onclick="isPalindromo()">
+            Começar
+          </button>
+          <p id="resultado"></p>
         </div>
-        <img
-          src="./img/ia.png"
-          alt="Uma pessoa olhando para a esquerda"
-          class="container__imagem-pessoa"
-        />
       </div>
     </div>
-
     <script src="app.js" defer></script>
   </body>
 </html>
