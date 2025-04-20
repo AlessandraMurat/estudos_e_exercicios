@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./assets/images/multiplication.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Tabuada</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/multiplication.png" alt="logo" height="48px" />
+    </header>
+    <main>
+      <h1>Tabuada</h1>
+      <section>
+        <div class="data_entry">
+          <p>Qual será o número multiplicado?</p>
+          <input type="number"  class="input" id="entry_number" />
+          <p>Qual número limite da multiplicação?</p>
+          <input type="number" class="input" id="exit_number" />
+          <button onclick="multiplication()">Calcular</button>
+        </div>
+        <div id="result">
+            Preencha os valores acima!
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"/>
+  </body>
+</html>

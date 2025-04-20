@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header, #list {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+#list h2 {
+    font-weight: 500;
+    color: #FE5F55;
+    padding: 1rem 0 .5rem 0;
+}
+
+#registration_product {
+    width: 100%;
+    padding-bottom: 1rem;
+   
+}
+
+#grid_input {
+    
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.box_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.box_input label {
+    font-weight: 500;
+    padding-bottom: .5rem;
+    color: #4F6367;
+
+}
+
+.box_input input {
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #7A9E9F;
+    padding-left: 1rem;
+}
+
+#buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+#buttons button {
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#add {
+    background-color: #7A9E9F;
+    color: white;
+    border: none;
+    transition: all ease .4s;
+}
+
+#add:hover {
+    background-color: #4F6367;
+    
+}
+
+#cancel {
+    background-color: transparent;
+    border: 2px solid #FE5F55;
+    color: #FE5F55;
+    transition: all ease .3s;
+}
+
+#cancel:hover {
+    background-color: #FE5F55;
+    color: white;
+}
+
+
+
+
+table {
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    
+  }
+  
+  
+  table thead {
+    background: #7A9E9F;
+    color: white;
+    text-align: center;
+  }
+  table thead tr th { 
+    font-weight: 500;
+    padding: 12px 0;
+  }
+ 
+  table tbody tr td {
+    text-align: center;
+    padding: 15px 10px;
+  }
+  table tbody tr td.lalign {
+    text-align: left;
+  }

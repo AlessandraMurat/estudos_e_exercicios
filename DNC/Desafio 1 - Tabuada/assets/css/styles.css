@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #212121;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 1rem 2rem 0 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  margin-bottom: 3rem;
+  padding: .5rem 0;
+  border-radius: 20px;
+  background: linear-gradient(225deg, #1e1e1e, #232323);
+  box-shadow: 27px 27px 50px #141414;
+  width: 500px;
+}
+
+.data_entry {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+#result {
+    padding: 0 0 1rem 0;
+    text-align: center;
+}
+
+.input {
+    outline: none;
+    border: 1px solid #bdbdbd;
+    background-color: transparent;
+    height: 45px;
+    width: 250px;
+    margin-bottom: 1rem;
+    color: #bdbdbd ;
+    font-size: 24px;
+    padding-left: 1rem;
+    border-radius: 10px;
+}
+
+input:focus, input:hover {
+    border: #4eadfe 1px solid;
+}
+
+.input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+
+button {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1rem;
+    width: 150px;
+    height: 50px;
+    border: #4eadfe 2px solid;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #05edfe, #19dbfe, #4eadfe);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

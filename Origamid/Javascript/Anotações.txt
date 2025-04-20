@@ -1,0 +1,498 @@
+================ Variáveis ===================
+
+São responsáveis por guardar dados na memória inicia com a palavra, deste modo evitamos a repetições nas declarações  
+
+var 
+let
+const 
+
+É possível mudar os valores atribuidos a varáveis declaradas com var e let. Porém não é possível modificar valores das declaradas com const;
+
+================ Tipos de variáveis ===================
+
+String;
+Podemos somar uam string e assim concatenar as palavras
+
+Number;
+Boolen;
+Undefined;
+Null;
+Symbol;
+Object
+
+
+
+Para saber qual o tipo da variável, usamos "typeof"
+
+
+Condicionais If e Else 
+Verifivcar se uma expressão é verdadeira  com is, caso contrário o else será ativado
+
+E temos o else if qque caso o if seja falso ele verifica o else if
+
+
+============== Truthy e Falsy ==============
+
+Existem valores que retornam true e outros que retornam false quando verificados em uma expressão booleana
+
+Falsy
+if(false)
+if(0)
+if(NaN)
+if(null)
+if(undefined)
+if('')
+
+Truthy
+if(true)
+if(1)
+if(' ')
+if('Alessandra')
+if(-5)
+if({})
+
+============== Operador lógico de negação ==============
+
+O operador !, nega uma operação booleana, ou seja, !true é igual a false 
+
+E podemos utilizar !! para verificar se uma expressão é truty ou false
+
+============== Operadores de comparação ==============
+
+Vão sempre retornar uma valor booleano 
+
+10 > 5 = true 
+5 > 10 = false
+20 < 10 = false
+10 <= 10 = true
+10 >=11 = false
+
+Além disso temos o == que faz uma comparação não tão estrita e o === faz uma comparação estrita, ou seja, o tipo de dado deve ser o mesmo quando usamos ===
+
+10 == '10' = true
+10 == 10 = true
+10 === '10' = false
+10 === 10 = true
+10 != 15 = true
+10 != '10' = false
+10 !== '10' = true
+
+============== Operadores Lógicos ==============
+
+→ &&
+
+Compara se uma expressão e a outra é verdadeira 
+
+Se ambos os valores forem true ele irá retornar o útimo valor verificado. Se algum falor for false ele irá retornar o mesmo e não irá continuar a verficar os próximos 
+
+true && true = true 
+true && false = false
+false && true = false
+'gato' && 'cão' = cão 
+(5-5) && 5+5 = 0
+'Gato' && false = false 
+(5>= 5) && (3< 6) = true 
+
+→ || 
+
+Compara se uma expressão ou outra é verdadeira, ou seja ele precisa que somente um seja verdadeiro para retornar true 
+
+Retorna o primeiro valor true que encontrar 
+
+true || true = true 
+true || false = true
+false || true = true
+'gato' || 'cão' = gato
+(5-5) || 5+5 = 10
+'Gato' || false = gato
+(5>= 5) || (3< 6) = true 
+
+→ Switch
+
+Com o switch você pode verificar se uma variável é igual à diferentes valores utilizando o case> caso ela seja igual, voce pode fazer alguma coisa, utilizar a palvra chave break; para cancelar a continuação. O valor de default ocorrerá caso nenhuma das anteriores sejam verdadeira 
+
+============== Funcões ==============
+
+
+Bloco de código que pode ser executado e reutilizado. Valores podem ser passados por uma função e a mesma retorna outro valor
+
+→ Parâmetro e Argumento
+
+Ao citar uma função voce pode definir parametros
+AO executar uma função voce pode passar argumentos
+
+Separar por virgula cada parâmetro. Você pode definir mais de um parâmetroou nenhum
+
+
+→ Parenteses executa função
+
+Se apenas definimos a função com a function e não executamos a mesma, nada que estiver dentro dela irá acontecer
+
+
+→ Funções podem ser argumentos 
+
+Chamadas de callback, geralmente são funções que ocorrem após algum evento
+
+Quando não definimos o return ele irá retornar undefined. O codigo interno da função é executado notmalmente, independente de existir valor de return ou não.
+
+
+→ Podem ou não retornar um valor 
+
+Quando não definimos a return, ele irá retornaer undefined. O código interno da função é executado normalmente, independente de existir valor de return ou não.
+
+
+→ Valores retornados 
+
+Uma função pode retornar qualquer tipo de dado até outras funções
+
+Cuidado, retornar diferentes tipos de dados na messma função não é uma boa prática
+
+→ Escopo
+
+Varáveis e funções definidas dentro de um bloco {}, não são visivéis fora dele
+
+→ Escopo Léxico
+
+Funções conseguem acessar variáveis que foram criadas no contexto pai 
+
+→ Hoisting 
+
+Antes de executar uma função, o JS 'move' todas as funções declaradas para a memória 
+
+============== Objetos ==============
+
+
+Conjunto de variáveis e funções, que são chamadas de propriedades e métodos 
+
+Propriedades e métodos consistem em nome (chave) e valor
+
+→ Métodos
+
+É uma propriedade que possui uma função no local do seu valor
+
+
+→ Organizar código
+
+Objetos servem para organizar o código em pequenas partes reutilizáveis 
+
+Math é um objeto 
+
+→ Dot notation Get 
+
+Acesse propriedades de um objeto utilizando o ponto
+
+→ Dot notation Set 
+
+Substitua o valor de uma propriedade utilizando  .  e o = após o nome da mesma 
+
+→ Adicionar Propriedades e Métodos
+
+Basta adicionar um novo nome e definir o valor 
+
+============== Tudo é Objeto =============
+
+Strings, numeros, Boolean, objetos e outros, possuem propiedades e métodos. Por isso são objetos
+Uma string herda propriedades 
+
+→ String
+
+Uma string herda propriedades e métodos ddo construtor String()
+
+→ Números 
+
+Por um breve momento o número é envolvido em um Objeto (coerção), temos acesso assim as suas propriedades e métodos
+
+→ Elementos do DOM 
+
+Praticamente todos os efeitos co JS são feitos utilizando propriedades e métodos de objetos do DOM
+
+
+============== Array e Loop =============
+
+→ Array
+
+É um grupo de valores geralmente relacionados. Servem para guardarmos diferentes valores em uma única varável
+
+Acesse um elemento da array utilizando [n]
+
+
+→ Métodos e propriedades de uma Array
+
+As mais conhecidas são: pop, push, map, reduce, forEach, length
+
+
+→ For loop 
+
+Fazem algo repetidamento até que uma condição seja atingida
+
+O for loop possui 3 partes: ínicio, condição e incremento 
+
+→ Break 
+
+O loop irá parar caso encontre o break 
+
+
+→ forEach
+
+É um método que executa uma função para cada item da array é uam forma mais simples de utilizarmos um loop com arrays ou (array-like)
+
+
+
+============== Atribuição e Ternário =============
+
+→ Atribuição
+
+usamos para abreviar operações 
+
+
+→ Ternário 
+
+Abreviação de condicionais com if e else 
+
+Geralmente utilizado quando precisamos atribuir um valor para uma variável dependendo de uma condição
+
+
+→ If Abreviado 
+
+Não é necessário abrir e fechar as chaves {} quando retornamos apenas uma linha de código
+
+============== Variáveis declaráveis =============
+
+→ Escopo de função
+
+Variáveis declaradas dentro de funções não são acessadas fora das mesmas
+
+Escopo evita conflito entre nomes
+
+→ Variável global (erro)
+
+Declarar variáveis sem a palavra chave var, cosnt ou let, cria uma variável que pode ser acessada em qualquer escopo (global) esso é um erro 
+
+'use strict' impede isso
+
+
+→ Escopo de função(Pai)
+
+Variáveis declaradas no escopo pai da função 5
+
+→ Escopo de Bloco
+
+Variáveis criadas com var, vazam o bloco. Por isso com a introdução do ES6 a melhor forma de declararmos uma variável é utilizado const ou let , pois estas respeitam o escopo de bloco
+
+
+→ Var vaza bloco
+
+Mesmo com a condição falsa, a variável ainda será declarada utilizando hoisting e o valor ficará como undefined
+
+
+→ {} Cria um bloco
+
+Chaves {} criam um escopo de bloco, não confundir com a criaçao de objeto
+
+→ For loop
+
+Ao utilizar var dentro de um for loop, que é um bloco, o valor da variável utilizada irá vazar e existir fora do loop 
+
+→ Const 
+
+Mantém o escopo no bloco, impede a redeclaraçaõ e impede a modificação do valor da variável, evitando eros no código
+
+→ let 
+
+Mantém o escopo no bloco, impede a redeclaração, mas permite a modificação do valor da variável
+
+
+============================ O que é o DOM ===========================
+
+→ Document Object Model (DOM)
+
+É uma interface que representa documentos HTML e XML através de objetos. Com ela é possível manipular a estrutura, o estilo e conteúdo destes documentos.
+
+Ao inspencionar elementos com o chrome, você está vendo a representação oficial do DOM.
+
+→ Window e Document 
+
+São os objetos principais do DOM, boa parte da manipulação é feita através dos seus métodos e propriedades
+
+window é o objeto global, por isso não precisamos chamar ele na frente dos métodos e propiedades 
+
+→ Node 
+
+Toda tag html é representada pelo objecto Element e por isso herda os seus métodos e propriedades. Element é um tipo de objeto Node
+
+============================ Seleção de Elementos ===========================
+
+→ ID
+
+getElementById seleciona e retorna elementos do DOM 
+
+→ Classe e tag
+
+getElementsByClassName e getElementsByTagName, selecionam e retornam uma lista de elementos do DOM. A lista retornada está ao vivo, significa que se elementos forem adicionados, ela será automaticamente atualizada.
+
+→ Seletor Geral Único 
+
+querySelector retorna o primeiro elemento que combinar com o seu seletor Classe
+
+→ Seletor Geral Lista 
+
+querySelectorAll retorna todos os elementos compatíveis com o seletor CSS em uma NodeLifa-stack
+
+Diferente do getElementsByClassNam, a lista aqui é estática 
+
+→ HtmlCollection vc NodeList 
+
+A diferença está nos métodos e propriedades de ambas. Além disso a NodeList retornada com querySelector é estática 
+
+→ Array-like
+
+HTMLCollection e Nodelist são array-like, parecem uma array mas não são.O método de Array forEach() por exemplo existe apenas em NodeList
+
+É possível transformar array-like em uma array real, utilizando o método Array.from(gridSection)
+
+
+============================ ForEach e Arrow Function ===========================
+
+
+→ ForEach 
+
+Constantemente vamos selecionar uma lista de itens do dom. A melhor forma para interagirmos com os mesmos é utilizando o método forEach 
+
+→ Parâmetro do forEach
+
+O primeiro parâmtro é o callback, ou seja, a função que será ativada a cada item. Essa função pode receber três parâmetros : valorAtual, index e array;
+
+→ ForEach e Array
+
+forEach é um método de Array, alguns objetos array-like possuem este método. Caso não possua , o ideal é tranformá-los em uma array.
+
+→ Arrow Function 
+
+Sintaxe curta em relação a function expression. Basta remover a palavra chave function e adicionar a fat arrow => após os argumentos.
+
+→ Return 
+
+É possível omitir as chaves {} para uma função que retorna uma linha 
+
+
+============================ Classes e Atributos ===========================
+
+→ ClassList
+
+Retorna uma lista com as classes do elemento. Permite adicionar, remover e verificar se contém.
+
+→ Atributos (Attributes)
+
+Retorna uma array-like com os atributos dos elementos 
+
+→ getAttribute e setAttribute
+
+Métodos que retornam ou definem de acordo com o atributo seleionado
+
+→ Read Only vs Writable
+
+Existem propriedades que não permitem a mudança de seus valores, essas são considerados Read Only, ou seja, apenas leitura.
+
+Lembre-se que podemos alterar o valor de uma propriedade objeto.propriedade = ''
+
+============================ Dimensões e Distâncias ===========================
+
+→ Height e Width
+
+Estas são proriedades e métodos dos Objetos Element e HTMLElement, a maioria delas são read Only
+
+→ OffsetTop e OffsetLeft
+
+OffsetTop é a distância entre o topo do elemento e o topo da página 
+
+OffsetLef é a distância entre o canto esquerdo do elemento e o canto esquerdo da página
+
+→ getBoundingClientRect()
+
+Método que retorna um objeto com valores de width, height, distâncias dos elementos entre outros
+
+→ matchMedia()
+
+Utilize um media-querie como no CSS para verificar a largura do browser 
+
+============================ Eventos ===========================
+
+→ addEventListener
+
+Adiciona uma função ao elemento, esta chamada de callback, que será ativada assim que certo evento ocorrer neste momento
+
+O addEventListener possui três parâmetros, event, callback e options. Sendo que o último é opcional
+
+→ callback
+
+É boa prática separar a função de callback do addEventListener, ou seja, declarar a função ao invés de passar diretamente uma função anônima 
+
+→ Event 
+
+O primeiro parâmetro do callback é referente ao evento que ocorreu
+
+Geralmente utilizam e como nome do parâmetro
+
+→ event.preventDefault()
+
+Previne o comportamento padrão do evento no browser. No caso de um link externo por exemplo, irá prevenir que o link seja ativado.
+
+→ this 
+
+A palavra chave this é uma palavra especial do Javascript, que pode fazer referência a diferentes objetos dependendo do conteto. No caso de eventos, ela fará referência ao elemento que o addEventListener foi adicionado.
+
+Geralmente igual ao event.currenttarget
+
+→ Diferentess eventos
+
+Existem diversos eventos commo click, scroll, resize, keydown, keyup, mouseenter, e mais. Eventos podem ser adicionados a diferentes elementos, como o window e document também
+
+Lista de eventos: https://developer.mozilla.org/en-US/docs/Web/Events
+
+→ keyboard 
+
+Você pode adicionar atalhos para facilitar a navegação do seu site, através do evento do keyboard 
+
+→ forEach e Eventos
+
+O método addEventListener é adicionado a um único elemento, então é necessáario um loop entre os elementos de uma lista, para adicionarmos a cada um deles.
+
+
+→ outerHTML, innerHTML e innerText
+
+Propriedades que retornam uma string contendo o html ou texto. É possível atribuir um novo valor para as mesmas
+
+element.innerText = 'Novo texto'
+
+
+============================ Traversing e Manipulação ===========================
+
+
+→ Traversing
+
+Como navegar pelo DOM, utilizando suas propriedades e métodos 
+
+
+→ Element vs Node
+
+Element's representam um elemento HTML, ou seja, uma tag. Node representa um nó, e pode ser um elemento (Element), texto, comentário, quebra de linha, entre outros.
+
+Geralmente estamos atrás de um elemento e não de qualquer node em si,
+
+→ Manipulando Elementos 
+
+É possível mover elementos no DOM com métodos de Node
+
+→ Novos elementos
+
+Podemos criar novos elementos com o método createElement()
+
+→ Clonar elemento 
+
+Todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, é necessário utilizar o método cloneNode()
+
+true sinaliza para incluir os filhos
+
+
+
+

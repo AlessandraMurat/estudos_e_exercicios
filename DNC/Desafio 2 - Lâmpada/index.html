@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./assets/images/lampada.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Lâmpada</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/lampada.png" alt="logo" height="56px" />
+    </header>
+    <main>
+      <h1>Lâmpada</h1>
+      <section>
+        <div class="img_lamp">
+         <img id="lamp" src="assets/images/desligada.svg" alt="lâmpada desligada">
+        </div>
+        <div class="box_buttons">
+          <button id="turn_on" onclick="turnOn()">Ligar</button>
+          <button id="turn_off" onclick="turnOff()">Desligar</button>
+        </div>
+      
+      </section>
+    </main>
+
+    <script src="script.js"/>
+  </body>
+</html>
